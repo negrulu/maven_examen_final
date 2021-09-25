@@ -15,6 +15,7 @@ public class Main {
 		int opcionP;
 		General general1 = new General();
 		Vip vip1 = new Vip();
+		Poliza datos[] = new Poliza [150];
 		
 		do {
 			System.out.println("ASEGURADORA DEL SUR, elija una opción:");
@@ -77,7 +78,17 @@ public class Main {
 				//actualizar valor
 				System.out.println("Ingrese el codigo de poliza a cambiar: ");
 				int codigoPolizaCambiar = entrada1.nextInt();
-				if (codigoPolizaBuscar ) {
+				for (int i = 0; i <= datos.length; i++) {
+					Poliza poliza = datos[i];
+					boolean busqueda = poliza.get
+					if (busqueda == true) {
+						System.out.println("Ingrese el nuevo código de su póliza: ");
+						int codigoPoliza2 = entrada1.nextInt();
+						poliza.setCodigoPoliza(codigoPoliza2);
+						
+					} else {
+						System.out.println("No se ha encontrado su póliza...");
+					}
 					
 				}
 				
