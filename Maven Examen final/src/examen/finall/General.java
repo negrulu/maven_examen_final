@@ -5,7 +5,7 @@ public class General {
 	String descripcion;
 	int anioVigencia;
 	int codigoPoliza;
-	double valorPoliza;
+	int valorPoliza;
 	
 	int codigoDescuento;
 	int numeroSeguro;
@@ -36,7 +36,7 @@ public class General {
 	public double getValorPoliza() {
 		return valorPoliza;
 	}
-	public void setValorPoliza(double valorPoliza) {
+	public void setValorPoliza(int valorPoliza) {
 		this.valorPoliza = valorPoliza;
 	}
 	public int getCodigoDescuento() {
