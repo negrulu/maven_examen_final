@@ -14,6 +14,7 @@ public class Main {
 		int opcion;
 		int opcionP;
 		General general1 = new General();
+		Vip vip1 = new Vip();
 		
 		do {
 			System.out.println("ASEGURADORA DEL SUR, elija una opción:");
@@ -40,11 +41,56 @@ public class Main {
 					System.out.println("Ingrese el año de vigencia: ");
 					int anioVigenciaIngresado = entrada1.nextInt();
 					general1.setAnioVigencia(anioVigenciaIngresado);
-					
-					
+					System.out.println("Ingrese el codigo de poliza: ");
+					int codigoPolizaIngresado = entrada1.nextInt();
+					general1.setCodigoPoliza(codigoPolizaIngresado);
+					System.out.println("Ingrese el valor de poliza: ");
+					int valorPolizaIngresado = entrada1.nextInt();
+					general1.setValorPoliza(valorPolizaIngresado);
+					System.out.println("Ingrese el codigo de descuento: ");
+					int codigoDescuentoIngresado = entrada1.nextInt();
+					general1.setCodigoDescuento(codigoDescuentoIngresado);
+					System.out.println("Ingrese el numero de seguro: ");
+					int numeroSeguroIngresado = entrada1.nextInt();
+					general1.setNumeroSeguro(numeroSeguroIngresado);									
 				} else {
+					System.out.println("Ingrese su nombre: ");
+					String nombreIngresado = entrada1.nextLine();
+					vip1.setNombre(nombreIngresado);
+					System.out.println("Ingrese la descripcion: ");
+					String descripcionIngresada = entrada1.nextLine();
+					vip1.setDescripcion(descripcionIngresada);
+					System.out.println("Ingrese el año de vigencia: ");
+					int anioVigenciaIngresado = entrada1.nextInt();
+					vip1.setAnioVigencia(anioVigenciaIngresado);
+					System.out.println("Ingrese el codigo de poliza: ");
+					int codigoPolizaIngresado = entrada1.nextInt();
+					vip1.setCodigoPoliza(codigoPolizaIngresado);
+					System.out.println("Ingrese el codigo de poliza: ");
+					int valorPolizaIngresado = entrada1.nextInt();
+					vip1.setValorPoliza(valorPolizaIngresado);
+					System.out.println("Ingrese el codigo de descuento: ");
+					int beneficioIngresado = entrada1.nextInt();
+					vip1.setBeneficio(beneficioIngresado);
+				}
+			case 2:
+				//actualizar valor
+				System.out.println("Ingrese el codigo de poliza a cambiar: ");
+				int codigoPolizaCambiar = entrada1.nextInt();
+				if (codigoPolizaBuscar ) {
 					
 				}
+				
+			case 3:
+				//consultar
+				System.out.println("Ingrese el codigo de poliza a buscar: ");
+				int codigPolizaCambiar = entrada1.nextInt();
+				
+				
+			case 4:
+				//imprimir
+				
+				
 			}
 			
 		}while (opcion==5);
